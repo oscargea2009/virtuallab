@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Web Saya</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; }
+        input, button { width: 100%; padding: 10px; margin-top: 10px; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <h2>Aplikasi Web dari Colab</h2>
+    <form method="POST">
+        <input type="text" name="input_data" placeholder="Masukkan input di sini..." required>
+        <button type="submit">Jalankan</button>
+    </form>
+
+    {% if hasil %}
+        <div style="margin-top: 20px; padding: 15px; background: #f0f4f8;">
+            <strong>Hasil:</strong> {{ hasil }}
+        </div>
+    {% endif %}
+</body>
+</html>
